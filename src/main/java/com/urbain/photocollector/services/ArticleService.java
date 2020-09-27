@@ -1,5 +1,5 @@
 package com.urbain.photocollector.services;
 
-public class Article {
+public class ArticleService {
 
 }

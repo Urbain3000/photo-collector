@@ -1,5 +1,5 @@
 package com.urbain.photocollector.services;
 
-public class Artiste {
+public class ImageService {
 
 }

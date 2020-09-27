@@ -1,5 +1,5 @@
 package com.urbain.photocollector.controller;
 
-public class Article {
+public class ArtisteController {
 
 }

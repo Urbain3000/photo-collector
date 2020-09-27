@@ -11,7 +11,7 @@ import javax.persistence.OneToMany;
 
 import com.sun.istack.NotNull;
 
-public class Commande {
+public class CommandeEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long ref;

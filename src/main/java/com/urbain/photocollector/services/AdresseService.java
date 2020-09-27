@@ -1,5 +1,5 @@
 package com.urbain.photocollector.services;
 
-public class Adresse {
+public class AdresseService {
 
 }
