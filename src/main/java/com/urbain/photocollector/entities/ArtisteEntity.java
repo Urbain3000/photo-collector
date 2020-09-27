@@ -11,7 +11,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
-public class Artiste {
+public class ArtisteEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long artiste_id;
@@ -29,7 +29,7 @@ public class Artiste {
 	private NationalityEnum nationalite;
 
 	@OneToMany(mappedBy = "artiste")
-	private List<Article> article = new ArrayList<>();
+	private List<ArticleEntity> article = new ArrayList<>();
 
 	@OneToMany(mappedBy = "artiste")
 	private List<Utilisateur> utilisateur = new ArrayList<>();

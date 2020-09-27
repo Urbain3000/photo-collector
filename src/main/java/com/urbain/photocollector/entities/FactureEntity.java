@@ -5,7 +5,7 @@ import javax.persistence.Id;
 
 import com.sun.istack.NotNull;
 
-public class Facture {
+public class FactureEntity {
 	@Id
 	@NotNull
 	@NotBlank

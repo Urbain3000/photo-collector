@@ -12,7 +12,7 @@ import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
-public class Article {
+public class ArticleEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long article_ref;
@@ -30,10 +30,10 @@ public class Article {
 	private Date date_ajout;
 
 	@ManyToOne
-	private Artiste artiste;
+	private ArtisteEntity artiste;
 
 	@OneToMany(mappedBy = "article")
-	private List<Image> images = new ArrayList<>();
+	private List<ImageEntity> images = new ArrayList<>();
 
 	@ManyToOne
 	private Orientation orientation;
