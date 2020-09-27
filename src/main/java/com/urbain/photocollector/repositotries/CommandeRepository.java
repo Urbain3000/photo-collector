@@ -1,7 +1,11 @@
-package com.urbain.photocollector.repositotries;
-
-import org.springframework.data.repository.CrudRepository;
-
-public interface CommandeRepository extends CrudRepository<T, ID> {
-
-}
+//package com.urbain.photocollector.repositotries;
+//
+//import org.springframework.data.repository.CrudRepository;
+//import org.springframework.stereotype.Repository;
+//
+//import com.urbain.photocollector.entities.CommandeEntity;
+//
+//@Repository
+//public interface CommandeRepository extends CrudRepository<CommandeEntity, Long> {
+//
+//}

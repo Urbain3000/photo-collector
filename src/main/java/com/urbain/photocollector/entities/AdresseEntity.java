@@ -2,8 +2,6 @@ package com.urbain.photocollector.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -15,13 +13,14 @@ import javax.persistence.Table;
 public class AdresseEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long adresse_id;
+	@Column(name="adresse_id")
+	private Long adresseId;
 
 	@Column(length = 10, nullable = false)
-	private Long num;
-
-	@Enumerated(EnumType.STRING)
-	private VoieEnum voie;
+	private Long numeroVoie;
+	
+	@Column(nullable = false)
+	private String voie;
 
 	@Column(nullable = false)
 	private String complement_voie;
@@ -38,7 +37,7 @@ public class AdresseEntity {
 	@Column(length = 50)
 	private String nom_adresse;
 
-	@ManyToOne
-	private Utilisateur utilisateur;
+//	@ManyToOne
+//	private UtilisateurEntity utilisateur;
 
 }

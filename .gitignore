@@ -1,3 +1,6 @@
+#exclure temporairement application.properties
+*application.properties
+
 # Compiled class file
 *.class
 
