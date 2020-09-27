@@ -2,6 +2,6 @@ package com.urbain.photocollector.repositotries;
 
 import org.springframework.data.repository.CrudRepository;
 
-public interface Image extends CrudRepository<T, ID> {
+public interface Commande extends CrudRepository<T, ID> {
 
 }
