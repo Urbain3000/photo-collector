@@ -12,7 +12,7 @@ import javax.persistence.Table;
 
 @Table(name = "adresse")
 @Entity
-public class Adresse {
+public class AdresseEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long adresse_id;

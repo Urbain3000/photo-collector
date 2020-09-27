@@ -15,7 +15,7 @@ import com.sun.istack.NotNull;
 
 @Entity
 @Table(name = "utilisateur")
-public class Utilisateur {
+public class UtilisateurEntity {
 
 	@Id
 	@NotNull
